@@ -1,15 +1,11 @@
 import express from "express";
+import { ApolloServer } from "apollo-server-express";
 
 const app = express();
 const port = 9000;
 
-const one: number = 1;
-
-console.log(one);
-
-app.get("/", (req, res) => {
-  res.send("Hello World123!");
-});
+const server = new ApolloServer();
+server.applyMiddleware({ app, path: "/api" });
 
 app.listen(port);
 
