@@ -2,6 +2,7 @@
     "name": "tiyhouse-v1-server",
     "version": "0.1.0",
     "dependencies": {
+        "@graphql-tools/utils": "^10.2.3",
         "apollo-server-express": "^3.13.0",
         "express": "^4.19.2",
         "graphql": "^16.9.0"
